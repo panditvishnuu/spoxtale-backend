@@ -138,7 +138,7 @@ router.post(
 router.put(
   "/:id/status",
   authenticateUser,
-  roleMiddleware(["Employee"]),
+  roleMiddleware(["Employee", "Manager", "Administrator"]),
   async (req, res) => {
     const { status } = req.body;
 
