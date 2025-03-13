@@ -48,9 +48,7 @@ router.post(
   }
 );
 
-/**
- * Update a task (Admin/Manager only)
- */
+
 router.put(
   "/:id",
   authenticateUser,
